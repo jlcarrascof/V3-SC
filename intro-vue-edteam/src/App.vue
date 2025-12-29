@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import SingleFile from './components/single-file.vue';
-
+  import ReactivityFile from './components/reactivity-file.vue';
 </script>
 
 <template>
-  <SingleFile />
+  <!--   
+  <SingleFile /> 
+  -->
+  <ReactivityFile />
 </template>
 
 <style scoped>
