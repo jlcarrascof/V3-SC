@@ -1,5 +1,8 @@
 <script setup lang="ts">
     // Application logic goes here
+    import { ref } from 'vue';
+    const greeting = ref("Hello, EDTeam");
+    
 </script>
 
 <template>
