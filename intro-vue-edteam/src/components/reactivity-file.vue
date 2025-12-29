@@ -1,5 +1,7 @@
 <script setup lang="ts">
-    const message = 'Hi, EDTeam'
+    import { ref } from 'vue';
+
+    const message = ref('Hi, EDTeam')
 </script>
 
 <template>
