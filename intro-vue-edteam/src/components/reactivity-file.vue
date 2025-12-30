@@ -17,6 +17,10 @@
         lastName: 'Perez',
         age: 18,
     })
+
+    const updating = () => {
+        console.log(user.firstName)
+    }
 </script>
 
 <template>
