@@ -2,6 +2,14 @@
     import { ref } from 'vue';
 
     const message = ref('Hi, EDTeam')
+    const isVisible = ref(true)
+    const total = ref(100)
+
+    const user = ref({
+        firstName: 'Juan',
+        lastName: 'Perez',
+        age: 18,        
+    })
 </script>
 
 <template>
