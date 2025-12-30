@@ -1,9 +1,9 @@
 <script setup lang="ts">
     import { reactive, ref } from 'vue';
 
-    const message = ref('Hi, EDTeam')
-    const isVisible = ref(true)
-    const total = ref(100)
+    const message = ref<string>('Hi, EDTeam')
+    const isVisible = ref<boolean>(true)
+    const total = ref<number>(100)
 
 /*  const user = ref({
         firstName: 'Juan',
@@ -11,6 +11,8 @@
         age: 18,        
     })
  */
+
+ 
     const user = reactive({
         firstName: 'Juan',
         lastName: 'Perez',
