@@ -5,22 +5,20 @@
     const isVisible = ref(true)
     const total = ref(100)
 
-    const user = ref({
+/*  const user = ref({
         firstName: 'Juan',
         lastName: 'Perez',
         age: 18,        
     })
-
- /*
+ */
     const user = reactive({
         firstName: 'Juan',
         lastName: 'Perez',
         age: 18,
     })
-*/
 
     const updating = () => {
-        console.log(user.value.firstName)
+        console.log(user.firstName)
         console.log(message.value)
     }
 </script>
@@ -29,6 +27,7 @@
     <div>
         <input type="text" v-model="message" />
         {{ message }}
+        {{ user.firstName }}
     </div>
 </template>
 
