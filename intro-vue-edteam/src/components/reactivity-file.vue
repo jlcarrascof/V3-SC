@@ -5,11 +5,12 @@
     const isVisible = ref(true)
     const total = ref(100)
 
-    const user = ref({
+/*  const user = ref({
         firstName: 'Juan',
         lastName: 'Perez',
         age: 18,        
     })
+ */
 
     const user = reactive({
         firstName: 'Juan',
