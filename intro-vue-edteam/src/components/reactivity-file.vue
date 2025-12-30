@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { ref } from 'vue';
+    import { reactive, ref } from 'vue';
 
     const message = ref('Hi, EDTeam')
     const isVisible = ref(true)
@@ -9,6 +9,12 @@
         firstName: 'Juan',
         lastName: 'Perez',
         age: 18,        
+    })
+
+    const user = reactive({
+        firstName: 'Juan',
+        lastName: 'Perez',
+        age: 18,
     })
 </script>
 
