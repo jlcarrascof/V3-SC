@@ -12,8 +12,14 @@
     })
  */
 
- 
-    const user = reactive({
+    interface User {
+        firstName: string
+        lastName: string
+        age: number
+        isAdult?: boolean    
+    }    
+
+    const user = reactive<User>({
         firstName: 'Juan',
         lastName: 'Perez',
         age: 18,
