@@ -6,7 +6,11 @@
 
 <template>
     <div>
-
+        <ul>
+            <li v-for="name in names" :key="name">
+                {{ name }}
+            </li>
+        </ul>
     </div>
 </template>
 
