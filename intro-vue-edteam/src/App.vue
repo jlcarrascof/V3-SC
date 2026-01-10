@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import ConditionalTest from './components/conditional-test.vue';
+  import RenderList from './components/render-list.vue';
 </script>
 
 <template>
@@ -7,7 +7,9 @@
   <SingleFile /> 
   -->
   <!-- <ReactivityFile /> -->
-   <ConditionalTest />
+  <!--    <ConditionalTest />
+  -->
+  <RenderList />
 </template>
 
 <style scoped>
