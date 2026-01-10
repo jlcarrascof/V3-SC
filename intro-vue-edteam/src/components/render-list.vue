@@ -4,7 +4,7 @@
     interface User {
         id: number,
         firstName: string,
-        secondName: string,
+        lastName: string,
         age: number
     }
 
@@ -15,27 +15,27 @@
     const users = ref<User[]>([{
         id: 1,
         firstName: 'John',
-        secondName: 'Doe',
+        lastName: 'Doe',
         age: 30
     }, {
         id: 2,
         firstName: 'Jane',
-        secondName: 'Smith',
+        lastName: 'Smith',
         age: 25 
     }, {
         id: 3,
         firstName: 'Mike',
-        secondName: 'Johnson',
+        lastName: 'Johnson',
         age: 40
     }, {
         id: 4,
         firstName: 'Emily',
-        secondName: 'Davis',
+        lastName: 'Davis',
         age: 35        
     }, {
         id: 5,
         firstName: 'David',
-        secondName: 'Wilson',
+        lastName: 'Wilson',
         age: 28
     }]);
 </script>
@@ -46,6 +46,14 @@
         <ul>
             <li v-for="name in names" :key="name">
                 {{ name }}
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Users</h2>
+        <ul>
+            <li v-for="user in users" :key="user.id">
+               {{ user.id }} {{ user.firstName }}  {{ user.lastName }} {{ user.age }}
             </li>
         </ul>
     </div>
