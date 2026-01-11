@@ -26,7 +26,7 @@ import { reactive } from 'vue';
 
 <template>
     <div>
-
+        {{ cart.description }}
     </div>
 </template>
 
