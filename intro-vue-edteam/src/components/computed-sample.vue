@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive } from 'vue';
+import { computed, reactive } from 'vue';
 
     const cart = reactive({
         category: 'hosting',
@@ -21,6 +21,15 @@ import { reactive } from 'vue';
                 price: 40,
             },            
         ]
+    })
+
+    const message = computed(() => {
+        return cart.description
+    })
+
+    const totalPrice = computed(() => {
+        return cart.items.reduce((accumulator, current) => 
+            accumulator + current.price, 0)
     })
 </script>
 
