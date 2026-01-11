@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, reactive } from 'vue';
+    import { computed, reactive } from 'vue';
 
     const cart = reactive({
         category: 'hosting',
