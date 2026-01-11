@@ -38,7 +38,7 @@ import { computed, reactive } from 'vue';
         {{ message }}
     </div>
     <div>
-        Total Price: {{ totalPrice }}
+        Total Price: {{ totalPrice }} {{ cart.currency }}
     </div>
 </template>
 
