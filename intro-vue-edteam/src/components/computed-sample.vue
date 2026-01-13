@@ -23,9 +23,19 @@
         ]
     })
 
-    const message = computed(() => {
+    const message = computed({
+        get() {
+            return cart.description
+        },
+        set(newVal) {
+            cart.description = newVal
+        }
+    })
+
+    const message2 = computed(() => {
         return cart.description
     })
+
 
     const totalPrice = computed(() => {
         return cart.items.reduce((accumulator, current) => 
@@ -40,8 +50,12 @@
         {{ message }}
     </div>
     <div>
+        {{ message2 }}
+    </div>
+    <div>
         Total Price: {{ totalPrice }} {{ cart.currency }}
     </div>
+    <input v-model="message2" type="text" />
     <div>
         Total Quantity: {{ quantity }}
     </div>
