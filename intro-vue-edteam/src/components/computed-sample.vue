@@ -31,6 +31,8 @@
         return cart.items.reduce((accumulator, current) => 
             accumulator + current.price, 0)
     })
+
+    const quantity = computed(() => cart.items.length)
 </script>
 
 <template>
@@ -39,6 +41,9 @@
     </div>
     <div>
         Total Price: {{ totalPrice }} {{ cart.currency }}
+    </div>
+    <div>
+        Total Quantity: {{ quantity }}
     </div>
 </template>
 
