@@ -23,7 +23,11 @@
         ]
     })
 
-    const message = computed({
+    const message = computed(() => {
+        return cart.description
+    })
+
+    const message2 = computed({
         get() {
             return cart.description
         },
@@ -31,11 +35,6 @@
             cart.description = newVal
         }
     })
-
-    const message2 = computed(() => {
-        return cart.description
-    })
-
 
     const totalPrice = computed(() => {
         return cart.items.reduce((accumulator, current) => 
