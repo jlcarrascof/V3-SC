@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import ComputedSample from './components/computed-sample.vue';
+  import EventHandling from './components/event-handling.vue';
 </script>
 
 <template>
@@ -10,7 +10,8 @@
   <!--    <ConditionalTest />
   -->
   <!--   <RenderList /> -->
-  <ComputedSample />   
+  <!-- <ComputedSample /> -->
+   <EventHandling />
 </template>
 
 <style scoped>

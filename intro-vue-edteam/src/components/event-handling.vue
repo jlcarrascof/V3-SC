@@ -54,7 +54,6 @@
     <div>
         Total Price: {{ totalPrice }} {{ cart.currency }}
     </div>
-    <input v-model="message2" type="text" />
     <div>
         Total Quantity: {{ quantity }}
     </div>
