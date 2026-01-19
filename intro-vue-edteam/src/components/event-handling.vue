@@ -23,11 +23,7 @@
         ]
     })
 
-    const message = computed(() => {
-        return cart.description
-    })
-
-    const message2 = computed({
+    const message = computed({
         get() {
             return cart.description
         },
@@ -49,15 +45,12 @@
         {{ message }}
     </div>
     <div>
-        {{ message2 }}
-    </div>
-    <div>
         Total Price: {{ totalPrice }} {{ cart.currency }}
     </div>
     <div>
         Total Quantity: {{ quantity }}
     </div>
-    <button v-on:click="message='Hi, from the Vue 3 course'"></button>
+    <button v-on:click="message='Hi, from the Vue 3 course'">Update Description</button>
 </template>
 
 <style scoped>
