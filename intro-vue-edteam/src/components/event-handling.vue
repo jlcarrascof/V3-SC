@@ -57,6 +57,7 @@
     <div>
         Total Quantity: {{ quantity }}
     </div>
+    <button v-on:click="message='Hi, from the Vue 3 course'"></button>
 </template>
 
 <style scoped>
