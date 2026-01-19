@@ -40,7 +40,7 @@
     const quantity = computed(() => cart.items.length)
 
     const inputHandler = () => {
-        alert(cart.description)
+        console.log(cart.description)
     }
 </script>
 
