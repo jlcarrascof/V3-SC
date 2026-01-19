@@ -54,7 +54,7 @@
     <div>
         Total Quantity: {{ quantity }}
     </div>
-    <input v-model="cart.description" type="text" @keyup="inputHandler" />
+    <input v-model="cart.description" type="text" @keyup.enter="inputHandler" />
     <button @click="message='Hi, from the Vue 3 course'">Update Description</button>
 </template>
 
