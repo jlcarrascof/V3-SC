@@ -1,6 +1,20 @@
 <script setup lang="ts">
-    import { computed, reactive } from 'vue';
+    import { computed, onMounted, reactive } from 'vue';
 
+    interface Cart {
+        category: string,
+        description: string,
+        currency: string,
+        items: Item[]
+    }
+
+    interface Item {
+        id: number,
+        name: string,
+        price: number        
+    }
+
+    onMounted
     const cart = reactive({
         category: 'hosting',
         description: 'EDTeam shopping cart',
