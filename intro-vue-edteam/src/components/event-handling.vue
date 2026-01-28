@@ -14,27 +14,31 @@
         price: number        
     }
 
-    onMounted
-    const cart = reactive({
-        category: 'hosting',
-        description: 'EDTeam shopping cart',
-        currency: 'USD',
-        items: [
+    onMounted(() => {
+        console.log('Working from the beginning')
+        cart.items = [
             {
                 id: 1,
-                description: 'Basic',
+                name: 'Basic',
                 price: 20,
             },
             {
                 id: 2,
-                description: 'Medium',
+                name: 'Medium',
                 price: 30,
             },            {
                 id: 3,
-                description: 'Pro',
+                name: 'Pro',
                 price: 40,
             },            
-        ]
+        ]; 
+    })
+
+    const cart = reactive<Cart>({
+        category: 'hosting',
+        description: 'EDTeam shopping cart',
+        currency: 'USD',
+        items: [] 
     })
 
     const message = computed({
