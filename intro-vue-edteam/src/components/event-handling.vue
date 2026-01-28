@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { computed, onMounted, reactive } from 'vue';
+    import { computed, onMounted, onUnmounted, reactive } from 'vue';
 
     interface Cart {
         category: string,
@@ -33,6 +33,10 @@
             },            
         ]; 
     })
+
+    onUnmounted(() => {
+        console.log('Goodbye')
+    }) 
 
     const cart = reactive<Cart>({
         category: 'hosting',
