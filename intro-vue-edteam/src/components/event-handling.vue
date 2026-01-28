@@ -35,7 +35,8 @@
     })
 
     onUnmounted(() => {
-        console.log('Goodbye')
+        console.log('Passing here... in unMounted()')
+        alert('Goodbye')
     }) 
 
     const cart = reactive<Cart>({
