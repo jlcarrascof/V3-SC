@@ -8,7 +8,11 @@
         if (!m) {
             error.value = 'This field is required!!'
         } else {
-            error.value = ''
+            if (m.length > 15) {
+                error.value = 'This field must have 1-15 characters'
+            } else {
+                error.value = ''
+            }
         }       
     })
 </script>
