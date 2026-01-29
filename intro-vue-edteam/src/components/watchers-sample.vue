@@ -1,8 +1,16 @@
 <script setup lang="ts">
-    import { ref } from 'vue';
+    import { ref, watch } from 'vue';
 
     const message = ref<string>(`Hi, EDTeam`)
     const error = ref<string>('')
+
+    watch(message, (m) => {
+        if (!m) {
+            error.value = 'This field is required!!'
+        } else {
+            error.value = ''
+        }       
+    })
 </script>
 
 <template>
