@@ -15,9 +15,9 @@
 
 <template>
     <div>
-        <div>Message: {{ message }}</div>
+        <div>Message: {{ message }} </div>
         <input v-model="message" type="text" />
-        <span style="color: red">{{ error }}</span>
+        <span v-if="error" style="color: red">{{ error }}</span>
     </div>
 </template>
 
