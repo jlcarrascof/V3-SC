@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import EventHandling from './components/event-handling.vue';
+  import WatchersSample from './components/watchers-sample.vue';
 </script>
 
 <template>
@@ -11,7 +11,9 @@
   -->
   <!--   <RenderList /> -->
   <!-- <ComputedSample /> -->
-   <EventHandling />
+  <!--    <EventHandling />
+  -->
+  <WatchersSample />
 </template>
 
 <style scoped>
