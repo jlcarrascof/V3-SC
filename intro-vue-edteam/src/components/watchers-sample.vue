@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="flex">
         <div>Message: {{ message }} </div>
         <input v-model="message" type="text" />
         <span v-if="error" style="color: red">{{ error }}</span>
@@ -22,5 +22,9 @@
 </template>
 
 <style scoped>
-
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
 </style>
