@@ -1,12 +1,19 @@
 <script setup lang="ts">
-  import ReactivityFile from './components/reactivity-file.vue';
+  import WatchersSample from './components/watchers-sample.vue';
 </script>
 
 <template>
   <!--   
   <SingleFile /> 
   -->
-  <ReactivityFile />
+  <!-- <ReactivityFile /> -->
+  <!--    <ConditionalTest />
+  -->
+  <!--   <RenderList /> -->
+  <!-- <ComputedSample /> -->
+  <!--    <EventHandling />
+  -->
+  <WatchersSample />
 </template>
 
 <style scoped>
